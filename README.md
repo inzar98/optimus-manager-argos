@@ -3,6 +3,7 @@ Gnome Shell Indicator for Optimus-Manager, using Argos API
 
 Special Thanks to Cyberalex4 and Askannz <3!
 
+Screenshot was first release. Added icon switch for after gpu switching.
 ![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
 
 #### Requirements
