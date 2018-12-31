@@ -24,9 +24,9 @@ reboot_cmd="\"\
 	\""
 
 nvidia_settings="\"nvidia-settings -p 'PRIME Profiles'\""
-nvidia_active_icon="nvidia-active-symbolic"
-nvidia_inactive_icon="nvidia-inactive-symbolic"
-reboot_icon="system-restart"
+nvidia_active_icon="nvidiaactivesymbolic"
+nvidia_inactive_icon="primeindicatorintelsymbolic"
+reboot_icon="'system-restart'"
 
 
 QUERY=$(optimus-manager --print-mode)
@@ -43,8 +43,8 @@ echo -e "$panel_string""iconName=$nvidia_state_icon"
 echo "---"
 echo "NVIDIA PRIME Profiles| iconName=$nvidia_state_icon bash=$nvidia_settings terminal=false"
 echo "---"
-echo "Switch to INTEL | iconName='prime-indicator-intel' bash=$activate_intel terminal=false"
-echo "Switch to NVIDIA  | iconName='prime-indicator-nvidia' bash=$activate_nvidia  terminal=false"
+echo "Switch to INTEL | iconName='primeindicatorintel' bash=$activate_intel terminal=false"
+echo "Switch to NVIDIA  | iconName='primeindicatornvidia' bash=$activate_nvidia  terminal=false"
 
 echo "---"
 echo "System Reboot | iconName=$reboot_icon bash=$reboot_cmd terminal=false"
