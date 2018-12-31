@@ -3,7 +3,7 @@ Gnome Shell Indicator for Optimus-Manager, using Argos API
 
 Special Thanks to Cyberalex4 and Askannz <3!
 
-![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.jpg)                                       
+![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
 
 #### Requirements
 - [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
