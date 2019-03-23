@@ -1,5 +1,6 @@
 
-                        # ARGOS DEV. IS STOPED SO THIS EXTESION TOO !!!!!!!!!!!!1
+                        # ARGOS DEVELOPMENT IS STOPPED. FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
+                        # I can fork it too if anyone want...
 
 
 # Argos Script For Optimus-Manager
