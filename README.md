@@ -1,3 +1,7 @@
+
+                        # ARGOS DEV. IS STOPED SO THIS EXTESION TOO !!!!!!!!!!!!1
+
+
 # Argos Script For Optimus-Manager
 Gnome Shell Indicator for Optimus-Manager, using Argos API
 
