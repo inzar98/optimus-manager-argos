@@ -15,7 +15,7 @@ Screenshot was first release. Added icon switch for after gpu switching.
 #### Requirements
 - [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
 - [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
-- Zenity By @ArionWT
+- Zenity for dialog window By @ArionWT
 - Any Arch based distro.
 
 
