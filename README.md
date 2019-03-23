@@ -15,11 +15,13 @@ Screenshot was first release. Added icon switch for after gpu switching.
 #### Requirements
 - [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
 - [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
+- Zenity By @ArionWT
 - Any Arch based distro.
 
 
 #### Installation
 Install [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome-Shell extension.
+FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
 
 Create directory `~/.local/share/icons` if it does not exist:
 ```
@@ -29,10 +31,10 @@ Create directory `~/.local/share/icons` if it does not exist:
 Then:
 ```
 git clone https://github.com/inzar98/optimus-manager-argos.git
-cd argos-indicator-nvidia-prime
+cd optimus-manager-argos
 
-# copy icons
-cp -v icons/* ~/.local/share/icons/
+    # copy icons (not necessary)
+    cp -v icons/* ~/.local/share/icons/
 
 # copy 'optimus-manager-ar.sh' to 'argos' folder
 cp -v optimus-manager-ar.sh ~/.config/argos/
