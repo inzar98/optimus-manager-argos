@@ -42,8 +42,8 @@ nvidia_settings="\"nvidia-settings -p 'PRIME Profiles'\""
 reboot_icon="'system-reboot-symbolic'"
 
 
-QUERY=$(optimus-manager --print-mode)
-if [ "$QUERY" == 'Current mode : nvidia' ]; then
+QUERY=$(optimus-manager --print-mode | grep 'Current GPU mode' | awk '{print $5}')
+if [ "$QUERY" == 'nvidia' ]; then
     nvidia_state_icon=prime-nvidia
     TEMP=$(nvidia-smi -q -d TEMPERATURE | grep 'GPU Current Temp' | awk '{print $5}')
     panel_string="$TEMP\xe2\x84\x83 | "
