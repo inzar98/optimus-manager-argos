@@ -1,6 +1,4 @@
 
-                        # ARGOS DEVELOPMENT IS STOPPED. FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
-                        # I can fork it too if anyone want...
 
 
 # Argos Script For Optimus-Manager
@@ -21,7 +19,6 @@ Screenshot was first release. Added icon switch for after gpu switching.
 
 #### Installation
 Install [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome-Shell extension.
-FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
 
 Create directory `~/.local/share/icons` if it does not exist:
 ```
