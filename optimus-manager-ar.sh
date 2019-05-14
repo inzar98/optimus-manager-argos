@@ -44,11 +44,11 @@ reboot_icon="'system-reboot-symbolic'"
 
 QUERY=$(optimus-manager --print-mode | grep 'Current GPU mode' | awk '{print $5}')
 if [ "$QUERY" == 'nvidia' ]; then
-    nvidia_state_icon=prime-nvidia
+    nvidia_state_icon=primeindicatornvidia
     TEMP=$(nvidia-smi -q -d TEMPERATURE | grep 'GPU Current Temp' | awk '{print $5}')
     panel_string="$TEMP\xe2\x84\x83 | "
 else
-    nvidia_state_icon=prime-intel
+    nvidia_state_icon=primeindicatorintel
     panel_string=" | "
 fi
 
@@ -56,8 +56,8 @@ echo -e "$panel_string""iconName=$nvidia_state_icon"
 echo "---"
 echo "NVIDIA PRIME Profiles| iconName=$nvidia_state_icon bash=$nvidia_settings terminal=false"
 echo "---"
-echo "Switch to INTEL | iconName='prime-intel' bash=$activate_intel terminal=false"
-echo "Switch to NVIDIA  | iconName='prime-nvidia' bash=$activate_nvidia  terminal=false"
+echo "Switch to INTEL | iconName='primeindicatorintelsymbolic' bash=$activate_intel terminal=false"
+echo "Switch to NVIDIA  | iconName='primeindicatornvidiasymbolic' bash=$activate_nvidia  terminal=false"
 
 echo "---"
 echo "System Reboot | iconName=$reboot_icon bash=$reboot_cmd terminal=false"
