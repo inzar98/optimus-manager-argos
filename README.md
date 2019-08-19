@@ -41,7 +41,7 @@ Screenshot was first release. Added icon switch for after GPU Switching.
 
 ___
 
-#### Uninstall
+### Uninstall
 
 ```bash
 # remove icons
