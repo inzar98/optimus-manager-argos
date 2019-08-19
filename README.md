@@ -41,7 +41,7 @@ cp -v optimus-manager-ar.sh ~/.config/argos/
 #### Uninstall
 ```
 # remove icons
-rm ~/.local/share/icons-to-delete/{nvidia-active-symbolic.svg,nvidia-inactive-symbolic.svg,prime-indicator-intel.svg,prime-indicator-intel-symbolic.svg,prime-indicator-nvidia.svg}
+rm ~/.local/share/icons-to-delete/{primeindicatorintelsymbolic.svg,primeindicatornvidiasymbolic.svg}
 
 
 # remove argos extension script
