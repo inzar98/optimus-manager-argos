@@ -8,6 +8,8 @@ Screenshot was first release. Added icon switch for after GPU Switching.
 
 ![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
 
+___
+
 ### Requirements
 
 - [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
