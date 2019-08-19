@@ -8,7 +8,7 @@ Screenshot was first release. Added icon switch for after GPU Switching.
 
 ![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
 
-#### Requirements
+### Requirements
 
 - [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
 - [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
@@ -16,26 +16,30 @@ Screenshot was first release. Added icon switch for after GPU Switching.
 - Any Arch based distro.
 
 
-#### Installation
+### Installation
 
-Create directory `~/.local/share/icons` if it does not exist:
+#### 1. Create directory `~/.local/share/icons` if it does not exist:
 
-```bash
-! [ -d "~/.local/share/icons" ] && mkdir --parents ~/.local/share/icons
-```
+  ```bash
+  ! [ -d "~/.local/share/icons" ] && mkdir --parents ~/.local/share/icons
+  ```
 
-Then:
+#### 2. Install
 
-```bash
-git clone https://github.com/inzar98/optimus-manager-argos.git
-cd optimus-manager-argos
+  ```bash
+  git clone https://github.com/inzar98/optimus-manager-argos.git
+  cd optimus-manager-argos
 
-# Copy icons
-cp -v icons/* ~/.local/share/icons/
+  # Copy icons
+  cp -v icons/* ~/.local/share/icons/
 
-# Copy 'optimus-manager-ar.sh' to 'argos' folder
-cp -v optimus-manager-ar.sh ~/.config/argos/
-```
+  # Copy 'optimus-manager-ar.sh' to 'argos' folder
+  cp -v optimus-manager-ar.sh ~/.config/argos/
+  ```
+
+#### 3. Enjoy!
+
+___
 
 #### Uninstall
 
