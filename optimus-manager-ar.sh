@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Thanks for idea and base script cyberalex4life <3 
 nvidia_switch="optimus-manager --no-confirm --switch nvidia"
+hybrid_switch="optimus-manager --no-confirm --switch hybrid"
 intel_switch="optimus-manager --no-confirm --switch intel"
 notify_switch="notify-send -h int:transient:2 -i \\\"dialog-information-symbolic\\\" \\\"Optimus Manager Indicator\\\" \\\"Switching graphics and restaring X server to finalize process! \\\" ; "
 activate_intel="\"\
@@ -9,6 +10,17 @@ activate_intel="\"\
 	$notify_switch \
 	sleep 2; \
 	$intel_switch; \
+	else \
+	exit 1; \
+	fi \
+	\""
+
+activate_hybrid="\"\
+	if zenity --question --title \\\"Optimus Manager Indicator\\\" --text \\\"Restart X server to switch on Hybrid?\\\" --width=256; \
+	then \
+	$notify_switch \
+	sleep 2; \
+	$hybrid_switch; \
 	else \
 	exit 1; \
 	fi \
@@ -29,8 +41,12 @@ nvidia_settings="\"nvidia-settings -p 'PRIME Profiles'\""
 
 
 QUERY=$(optimus-manager --print-mode | grep 'Current GPU mode' | awk '{print $5}')
-if [ "$QUERY" == 'nvidia' ]; then
-    nvidia_state_icon=primeindicatornvidiasymbolic
+if [ "$QUERY" == 'nvidia' ] || [ "$QUERY" == 'hybrid' ]; then
+	if [ "$QUERY" == 'nvidia' ]; then
+		nvidia_state_icon=primeindicatornvidiasymbolic
+	else
+		nvidia_state_icon=primeindicatorhybridsymbolic
+	fi
     TEMP=$(nvidia-smi -q -d TEMPERATURE | grep 'GPU Current Temp' | awk '{print $5}')
     panel_string="$TEMP\xe2\x84\x83 | "
 else
@@ -43,4 +59,5 @@ echo "---"
 echo "NVIDIA PRIME Profiles | iconName=$nvidia_state_icon bash=$nvidia_settings terminal=false"
 echo "---"
 echo "Switch to INTEL | iconName='primeindicatorintelsymbolic' bash=$activate_intel terminal=false"
+echo "Switch to HYBRID  | iconName='primeindicatorhybridsymbolic' bash=$activate_hybrid  terminal=false"
 echo "Switch to NVIDIA  | iconName='primeindicatornvidiasymbolic' bash=$activate_nvidia  terminal=false"
