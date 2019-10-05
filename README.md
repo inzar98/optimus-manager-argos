@@ -32,11 +32,8 @@ ___
   git clone https://github.com/inzar98/optimus-manager-argos.git
   cd optimus-manager-argos
 
-  # Copy icons
-  cp -v icons/* ~/.local/share/icons/
-
-  # Copy 'optimus-manager-ar.sh' to 'argos' folder
-  cp -v optimus-manager-ar.sh ~/.config/argos/
+  # Install the files
+  make install
   ```
 
 #### 3. Enjoy!
@@ -46,9 +43,6 @@ ___
 ### Uninstall
 
 ```bash
-# remove icons
-rm ~/.local/share/icons-to-delete/{primeindicatorintelsymbolic.svg,primeindicatornvidiasymbolic.svg}
-
-# remove argos extension script
-rm ~/.config/argos/optimus-manager-ar.sh
+# Remove the files
+make uninstall
 ```
