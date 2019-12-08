@@ -88,3 +88,9 @@ echo "---"
 echo "Switch to INTEL | iconName='primeindicatorintelsymbolic' bash=$activate_intel terminal=false"
 echo "Switch to HYBRID  | iconName='primeindicatorhybridsymbolic' bash=$activate_hybrid  terminal=false"
 echo "Switch to NVIDIA  | iconName='primeindicatornvidiasymbolic' bash=$activate_nvidia  terminal=false"
+
+_OPTIMUS_MANAGER_ARGOS_SHOW_CURRENT_PROFILE=${_OPTIMUS_MANAGER_ARGOS_SHOW_CURRENT_PROFILE:-0}
+if [ "$_OPTIMUS_MANAGER_ARGOS_SHOW_CURRENT_PROFILE" != '0' ]; then
+	echo "---"
+	echo "Current profile : $(optimus-manager --print-mode | grep 'Current GPU mode' | awk '{print $5}') | "
+fi
