@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 # Thanks for idea and base script cyberalex4life <3 
 
 # You can set parameters in this file
