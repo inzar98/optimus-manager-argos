@@ -1,48 +1,39 @@
 # Argos Script For Optimus-Manager
 
-Gnome Shell Indicator for Optimus-Manager, using Argos API.
-
-Special Thanks to Cyberalex4 and Askannz <3!
-
-Screenshot was first release. Added icon switch for after GPU Switching.
-
-![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
+Gnome Shell Indicator for Optimus-Manager, using Argos API.<br><br>
+<center><img src="screenshots/img.png"></center>
 
 ___
 
 ### Requirements
+- [Argos](https://extensions.gnome.org/extension/1176/argos/)
+    * Currently outdated: last commit `7 months ago`. Argos will be install automatically along with a GNOME Shell v42 patch. 
 
-- [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
 - [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
 - Zenity for dialog window By @ArionWT
-- Any Arch based distro.
+
 
 
 ### Installation
-
-#### 1. Create directory `~/.local/share/icons` if it does not exist:
-
-  ```bash
-  ! [ -d "~/.local/share/icons" ] && mkdir --parents ~/.local/share/icons
-  ```
-
-#### 2. Install
-
+Clone the repository and navigate into it:
   ```bash
   git clone https://github.com/inzar98/optimus-manager-argos.git
   cd optimus-manager-argos
-
-  # Install the files
+  ```
+Make install:
+  ```bash
   make install
   ```
-
-#### 3. Enjoy!
-
+If you have any `file exists` issues, simply use `-i` before `install`
 ___
 
 ### Uninstall
-
+Uninstall the Argos script. Will not uninstall Argos itself.
 ```bash
 # Remove the files
 make uninstall
 ```
+---
+Special Thanks to Cyberalex4 and Askannz <3! 
+
+Revived by [@xzntrc](https://github.com/xzntrc)
